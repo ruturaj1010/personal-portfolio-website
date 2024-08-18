@@ -7,30 +7,31 @@
 
 body {
     background-color: black;
+    color: white;
+    position: relative;
 }
 
 #header {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(/resources/personalImage.jpg);
     background-size: cover;
     background-position: top;
-    
-    .container {
-        background-color: black;
-        padding: 10px 10%;
-    }
 }
 
-nav {
+.navbar {
+    padding: 12px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 nav img {
-    width: 30px;
+    width: 40px;
     border-radius: 10px;
 }
 
@@ -63,9 +64,9 @@ nav ul li a:hover::after {
 }
 
 .header-text{
-    margin-top: 15%;
     margin-left: 50px;
     font-size: 30px;
+    padding-top: 10% ;
 }
 
 .header-text h1 {
@@ -74,4 +75,86 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: rgb(208, 205, 24);
+}
+
+/* --------------about-------------- */
+#about {
+    padding: 80px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.seperate {
+    height: 3px;
+    background-color: rgb(118, 113, 113);
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgb(216, 213, 18) 2px 2px 5px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 20px;
+}
+
+.tab-links {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li{
+    margin-left: 12px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: rgb(186, 40, 40);
+    font: 12px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
 }

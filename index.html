@@ -9,22 +9,63 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <img src="resources/logo.jpg" alt="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="resources/logo.jpg" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
         <div class="header-text">
             <p>UI Designer</p>
             <h1>Hi, I am <span>Ruturaj</span> Nikam<br>from India</h1>
+        </div>
+    </div>
+    <section class="seperate"></section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="resources/workimage.webp" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime dolorem similique deleniti,
+                        corporis est ullam laboriosam, delectus aperiam temporibus iusto dolores ratione esse earum ut
+                        nihil doloribus quos voluptas, sequi mollitia impedit. Maxime.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI Designer</span><br><p>Web interface designer</p></li>
+                            <li><span>Responsiveness</span><br><p>Designing Responsive Websites</p></li>
+                            <li><span>Frameworks</span><br><p>Reactjs Typescript</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Netflix clone</span><br><p>My first project using HTML, CSS</p></li>
+                            <li><span>Spotify clone</span><br><p>Responsive spotify website using HTML, CSS and JS</p></li>
+                            <li><span>News Website</span><br><p>Build NewsAdda website using reactjs and NewsAPI</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SSC</span><br><p>2019-2020</p></li>
+                            <li><span>HSC</span><br><p>2021-2022</p></li>
+                            <li><span>Computer Science (AIML) Engineering</span><br><p>2022-2026</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
