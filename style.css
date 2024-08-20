@@ -202,7 +202,7 @@ nav ul li a:hover::after {
     background-color: red;
     transform: translateY(-10px);
 }
-
+/* -------------------portfolio---------------------- */
 #portfolio {
     padding: 50px 5%;
 }
@@ -296,4 +296,85 @@ nav ul li a:hover::after {
 .btn:hover {
     background-color: #ff0000;
     transform: translateY(2px);
+}
+
+/* -----------------contact------------------- */
+
+#contact {
+    margin: 5%;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin: 15px 0;
+}
+
+.contact-left p i {
+    margin-right: 7px;
+    color: #ff9d00;
+}
+
+.social-icons {
+    margin: 25px 0;
+}
+
+.social-icons a {
+    color: rgb(247, 242, 236);
+    margin-right: 5px;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgb(235, 158, 42);
+}
+
+.btn-cv {
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    padding: 12px 12px;
+    background-color: rgb(121, 35, 35);
+    color: white;
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.btn-cv:hover {
+    background-color: red;
+}
+
+form input, form textarea {
+    display: inline-block;
+    border: 2px solid #c44e4e;
+    padding: 6px;
+    margin: 7px 0;
+    width: 100%;
+    background: rgb(110, 108, 108);
+    color: white;
+    font-size: 18px;
+}
+
+input::placeholder , textarea::placeholder{
+    color: hsl(0, 0%, 100%); /* Replace with your desired color */
+    opacity: 1; /* Optional: Ensures full opacity for the placeholder */
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    margin-top: min(10vh);
 }
