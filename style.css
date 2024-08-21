@@ -5,6 +5,10 @@
     font-family: 'Times New Roman', Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: white;
@@ -13,7 +17,7 @@ body {
 
 #header {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     background-image: url(/resources/personalImage.jpg);
     background-size: cover;
     background-position: top;
@@ -99,9 +103,11 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 100%;
+    height: 300px;
+    margin-left: 10vw;
+    margin-top: 30px;
     border-radius: 15px;
-    box-shadow: rgb(216, 213, 18) 2px 2px 5px;
+    box-shadow: rgb(233, 227, 221) 2px 2px 5px;
 }
 
 .about-col-2 {
@@ -202,6 +208,7 @@ nav ul li a:hover::after {
     background-color: red;
     transform: translateY(-10px);
 }
+
 /* -------------------portfolio---------------------- */
 #portfolio {
     padding: 50px 5%;
@@ -312,7 +319,7 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin: 15px 0;
 }
 
@@ -355,9 +362,11 @@ nav ul li a:hover::after {
 
 .btn-cv:hover {
     background-color: red;
+    transform:translateY(2px);
 }
 
-form input, form textarea {
+form input,
+form textarea {
     display: inline-block;
     border: 2px solid #c44e4e;
     padding: 6px;
@@ -368,13 +377,79 @@ form input, form textarea {
     font-size: 18px;
 }
 
-input::placeholder , textarea::placeholder{
-    color: hsl(0, 0%, 100%); /* Replace with your desired color */
-    opacity: 1; /* Optional: Ensures full opacity for the placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
 }
 
 .copyright {
     color: white;
     text-align: center;
     margin-top: min(10vh);
+}
+
+/* ------------------Responsiveness------------------ */
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width : 600px) {
+    .header-text {
+        margin-left: 5%;
+        font-size: 20px;
+        padding-top: 15%;
+        width: 100px;
+        color: rgb(67, 67, 64);
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .about-col-1 img {
+        margin: 0 0 20px 0;
+    }
+
+    .about-col-2 h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .contact-left>p:nth-child(2) {
+        width: 252px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: block;
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: #d31714;
+        top: 0;
+        right: -100%;
+        padding-top: 55px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        margin: 18px 0 ;
+        cursor: pointer;
+    }
 }
