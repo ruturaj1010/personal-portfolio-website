@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(199, 0, 0, 0.871);
     position: sticky;
     top: 0;
     z-index: 5;
@@ -432,7 +432,8 @@ nav .fa-solid {
         position: fixed;
         width: 200px;
         height: 100vh;
-        background-color: #d31714;
+        background-color: #473e3d;
+        color: red;
         top: 0;
         right: -100%;
         padding-top: 55px;
